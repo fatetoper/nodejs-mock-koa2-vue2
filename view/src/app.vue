@@ -62,35 +62,35 @@
 
 <script>
 	import { mapState } from 'vuex'
-  	import store from './vuex/store';
-  	import totop from 'components/totop'
-  	import top from 'commonvue/top'
-  	import side from 'commonvue/side'
-  	import navlist from 'commonvue/navlist'
+	import store from './vuex/store';
+	import totop from 'components/totop'
+	import top from 'commonvue/top'
+	import side from 'commonvue/side'
+	import navlist from 'commonvue/navlist'
 
-  	export default {
-	  	components :{
-	  		totop,
-	  		top,
-	  		side,
-	  		navlist
-	  	},
-	    store,
-	    data(){
-	    	return{
-	    		// leftBarToggle:false,
-	    	}
-	    },
-	    computed: {
-            ...mapState({
-                leftBarToggle: state => state.catalog.leftBarToggle,
-            })
-        },
-	    methods:{
-	    	change:function(propName,newVal,oldVal){
-	            this[propName]=newVal;
-	        },
-	    }
-  	}
+	export default {
+		components :{
+			totop,
+			top,
+			side,
+			navlist
+		},
+		store,
+		data(){
+			return{
+				// leftBarToggle:false,
+			}
+		},
+		computed: {
+					...mapState({
+							leftBarToggle: state => state.catalog.leftBarToggle,
+					})
+			},
+		methods:{
+			change:function(propName,newVal,oldVal){
+						this[propName]=newVal;
+				},
+		}
+	}
 </script>
 

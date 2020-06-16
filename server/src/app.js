@@ -6,9 +6,7 @@ import cors from 'koa-cors'
 import cookie from 'koa-cookie'
 import session from 'koa-session'
 import koa2Common from 'koa2-common'
-import {
-    SYSTEM
-} from './config'
+import { SYSTEM } from './config'
 import path from 'path'
 import router from './routes'
 
@@ -48,6 +46,7 @@ app
 
 app.listen(SYSTEM.PROT);
 
-console.log(`服务启动了：路径为：127.0.0.1:${SYSTEM.PROT}`)
+
+console.log(`serve is running at: 127.0.0.1:${SYSTEM.PROT}`)
 
 export default app

@@ -19,10 +19,10 @@ class util {
     }
 
     // 检查接口来源权限
-    checkReferer(cxt) {
+    checkReferer(ctx) {
         let begin = false;
         let url = SYSTEM.ORIGIN
-        let header = cxt.request.header
+        let header = ctx.request.header
 
         url = SYSTEM.ORIGIN
 

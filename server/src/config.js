@@ -18,7 +18,7 @@ export let DB = {
 	// 数据库用户名              
 	USER: 'root',
 	// 数据库密码    
-	PASSWORD: '123456', 
+	PASSWORD: 'root', 
 	// 数据库名称    
 	DATABASE: 'mock_zane_cms',
 	// 默认"api_"

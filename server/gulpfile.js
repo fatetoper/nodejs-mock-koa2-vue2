@@ -26,9 +26,9 @@ gulp.task('nodemon', function() {
     })
 })
 
-gulp.task('default', ['nodemon'], () => {
-    console.log('gulpfile.js 已经运行!')
-})
+gulp.task('default', gulp.series('nodemon', () => {
+    console.log('gulpfile.js is running!')
+}))
 
 
 
